@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero-Cafe / tipos de cafes</title>
+     <!-- css -->
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html" aria-label="inicio" title="inicio">
+            <figure>
+                 <img class="logo" src="../logos/zero.jpeg" alt="Logo de la empresa Zero-Cafe" title="Logo Zero-Cafe">
+            </figure>
+        </a>
+        <h1>Nuestros Servicios</h1>
+        <nav>
+           <ul>
+                <li>
+                    <a class="nav-link" href="./menu.html" title="Menu">Menu</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#" title="servicios">¿Que ofrecemos?</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="./sobre-mi.html" title="nosotros">Sobre nosotros</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="./contacto.html" title="nuestras redes">Redes</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <!-----------------------------------SECCION DE SERVICIOS------------->
+      <section class="section-servicios">
+        <!-- PRIMER SERVICIO -->
+        <article class="tarjeta-servicio">
+            <h2>Take away</h2>
+          <img class="servicios-img" src="../logos/take-away.png"  alt="foto del take-away" title="take-away" >
+          <p>tenemos en cuenta la gente que esta ocupada todo el dia y no tiene un momento para tomarse un cafe o comer algo
+            rico y por eso pensamos en la opción del take away para que por mas poco tiempo que tengan puedan disfrutar de un 
+            buen cafe de especialidad 
+          </p>
+        </article>
+        <article class="tarjeta-servicio">
+          <h2>Servicio a la mesa</h2>
+          <img class="servicios-img" src="../logos/serv-mesa.png" alt="Foto servicio a la mesa" title="servicio a la mesa">
+          <p>El servicio a la mesa es esencial para nuestra cafeteria ya que no solo queremos que pruebes lo que es un buen
+            cafe de especialidad sino que tambien que cada vez que entres te sientas como en casa, con un ambiente calido y
+            personas que siempre te van a atender con ganas para alegrarte el dia
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+    <p>Desarrollado por Juan Zandri</p>
+    <p>&copy;<span id="year"></span>Todos los Derechos Reservados</p>
+
+    <nav>
+        <ul>
+            <li>
+                <a class="RRSS-img" href="https://www.instagram.com/?flo=true" target="_blank" title="instagram" aria-label="instagram">
+                    <img class="RRSS-img" src="../logos/instagram.png" alt="logo de instagram" title="logo de instagram">
+                </a>
+            </li>
+              <li>
+                <a class="RRSS-img" href="https://www.facebook.com/?locale=es_LA" target="_blank" title="facebook" area-label="facebook">
+                    <img class="RRSS-img"src="../logos/facebook.png" alt="logo de facebook" title="facebook">
+                </a>
+            </li>
+              <li>
+                <a class="RRSS-img" href="https://web.whatsapp.com" target="_blank" title="whatsapp" area-label="whatsapp">
+                    <img class="RRSS-img" src="../logos/whatsapp.png" alt="Logo de whatsapp" title="whatsapp">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+</footer>
+
+<script>
+     document.getElementById("year").textcontent=new date().getFullYear();
+</script>
+</body>
+</html>

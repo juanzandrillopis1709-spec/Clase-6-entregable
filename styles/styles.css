@@ -1,0 +1,428 @@
+/* selector(etiqueta,class,id) {
+ propiedad: valor;
+} */
+ /* font-family:Nunito Sans */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto&display=swap');
+/* font-family: "Nunito Sans", sans-serif; */
+
+/* colores
+titulos #14213D */
+
+:root{
+--headings: #0D1B2A;
+--text: #14213D;
+--font-text:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+--background-tarjetas: #fdf0d5;
+}
+
+
+body {
+   background-color: #FDF0D5;
+   font-family: "Nunito Sans", sans-serif;
+}
+
+ h1 {
+    color: #0D1B2A;
+    font-size: 2.5rem;
+    
+ } 
+ p{
+    color: #14213D;
+    font-size: 1.25rem;
+ }
+ .cafes {
+    color: #1B263B;
+    font-size: 1.25rem;
+    font-weight: 400;
+ }
+ h2, h3 {
+   font-size: 1.5rem;
+   color: #0D1B2A;
+ }
+ 
+ /* header */
+header {
+   position: sticky;
+   top: 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px;
+
+}
+
+ .logo {
+   width: 15vh;
+   height: 10vh;
+ }
+
+ header nav ul{
+   display: flex;
+  gap: 10px;
+ }
+
+ header nav ul li {
+   list-style: none;
+   margin: 10px;
+ }
+ .nav-link {
+   text-decoration: none;
+   color:black;
+   font-weight: 700;
+   padding: 5px;
+   border: 2px solid black;
+   border-radius: 15px;
+ }
+
+ /* footer */
+ footer{
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   font-weight: 800;
+ }
+
+   .RS{
+   display: flex;
+   gap: 10px;   
+   list-style: none;
+   }
+ .RRSS-img-ws{
+position: fixed;
+bottom: 50px;
+right: 30px;
+height: 5vh;
+width: auto;
+ }
+
+ .footer-nav {
+   list-style: none;
+ }
+
+.RRSS-img {
+  
+   height: 5vh;
+   width: auto;
+}
+
+/* MENU */
+.coffee{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+
+}
+
+
+.logo-menu {
+   width: 150vh;
+   height: auto;
+}
+
+.coffee-img {
+   width: 100vh;
+   height: auto;
+   
+   
+}
+
+.comida-img {
+   width: 100vh;
+   height: auto;
+}
+
+
+
+/* INICIO */
+.hero{
+   display: flex;
+   flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.inicio{
+   height: 80vh;
+   padding: 150px ;
+}
+
+.hero-img{
+   width: 45vw;
+   height: auto;
+   border-radius: 30px;
+}
+
+.left{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-weight: bold;
+   font-size: small;
+   gap: 5px;
+}
+
+.hero-title{
+   color: var(--headings)
+}
+
+.hero-p, .hero-list{
+color: var(--text)
+}
+
+.hero-list{
+   list-style: none;
+   display: flex;
+   gap: 10px;
+}
+
+.hero-list li{
+  padding: 5px;
+  
+}
+
+.hero-nav{
+   
+}
+
+.hero-nav a{
+   text-decoration: none;
+   color:var(--text);
+   border: 2px solid black;
+   border-radius: 20px;
+   padding: 5px;
+   font-weight: 800;
+}
+
+.right{
+
+}
+
+ .img-principal {
+   width: 40vh;
+   height: auto;
+   border: 10px;
+   border-radius: 50px;
+   }
+   
+   /* TARJETA DE PRESENTACION, CAFES */
+
+   .coffee {
+  padding: 40px 20px;
+  background-color: #FDF0D5; /* Fondo claro crema */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c221e;
+}
+
+/* Título principal "Cafes" */
+.section-coffe {
+  align-items: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+}
+
+/* Contenedor Grid para las tarjetas */
+.coffee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Transformación de cada <article> en una tarjeta*/
+.coffee article {
+  background-color: #FDF0D5;
+  border: 2px solid #1a1a1a;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 25px;
+  max-width: 500px;
+  width: 100%;
+}
+
+
+/* Títulos de cada café (h3) */
+.coffee article h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #2c221e;
+  border-bottom: 2px solid #FDF0D5;
+  padding-bottom: 8px;
+}
+
+/* Ajuste y centrado de las imágenes */
+.coffee-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* Párrafo con la descripción */
+.cafes {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555555;
+  margin: 0;
+}
+
+/* Tarjetas de presentación comidas */
+
+.section-c{
+  padding: 40px 20px;
+  background-color: #FDF0D5; /* Fondo claro crema */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c221e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* titulo principal */
+.comida{
+   align-items: center;
+   font-size: 2.5rem;
+   margin-bottom: 30px;
+   color: #1a1a1a;
+}
+ /* transformacion de article en tarjeta */
+.section-c article{
+   background-color: #FDF0D5;
+   border: 2px solid black;
+   border-radius: 12px;
+   padding: 25px ;
+   margin-bottom: 25px;
+   max-width:500px ;
+   width:100% ;
+}
+
+/* titulo de cada cafe (h3) */
+
+.section-c article h3{
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #2c221e;
+  border-bottom: 2px solid #f0e6d8;
+  padding-bottom: 8px;
+}
+
+/* ajuste de las imagenes */
+.comida-img{
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.comida-p{
+   font-size: 0.95rem;
+   line-height: 1.6;
+   color: #555555;
+   margin: 0;
+}
+
+/* SOBRE MI */
+
+.tarjeta-historia{
+   display: flex;
+   align-items: center;
+   background-color: #FDF0D5;
+   border: 2px solid black;
+   border-radius: 12px;
+   padding: 24px;
+   margin: 20px auto;
+   max-width: 80%;
+}
+
+.texto-tarjeta p{
+   padding: 10px;
+   font-family: var(--font-text);
+   font-size:medium
+}
+
+.texto-tarjeta-2 p{
+   font-family: var(--font-text);
+   font-size: medium;
+}
+
+
+/* SERVICIOS */
+
+.section-servicios{
+   display: flex;
+   gap: 20px;
+   padding: 40px;
+   justify-content: center
+   ;
+  
+}
+
+.servicios-img {
+   width: 90px;
+   height: auto;
+   margin-bottom: 16px;
+   border-radius: 50px;
+   object-fit: cover;
+}
+
+.tarjeta-servicio{
+   background-color: #1a1a1a;
+   border: 2px solid #c8a364;
+   color: #ffff;
+   border-radius: 50px;
+   align-items: center;
+   padding: 20px;
+   width: auto;
+   text-align: center;
+}
+
+.tarjeta-servicio h2{
+   font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin-top: 0;
+   margin-bottom: 16px;
+   color: #fcf8ee;
+}
+
+.tarjeta-servicio p{
+   font-family: var(--font-text);
+   font-size: medium;
+   color: #fcf8ee;
+}
+
+/* CONTACTO */
+
+.seccion-redes{
+   text-align: center;
+   padding: 20px;
+   border: 2px solid black;
+   border-radius: 100px;
+}
+
+.contenedor-redes{
+display: flex;
+flex-direction: row;
+padding: 50px;
+gap: 200px;
+justify-content: center;
+align-items: center;
+}
+
+.section-redes h2{
+   margin-top: 0;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 25px;
+}
+
+.RRSS-img-2{
+   width: 60px;
+  height: 60px;   
+}
+
+.contenedor-redes h3 {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}

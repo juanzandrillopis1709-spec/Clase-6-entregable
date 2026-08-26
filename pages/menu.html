@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero-Cafe / Menu</title>
+     <!-- css -->
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html" aria-label="inicio" title="inicio">
+            <figure>
+                 <img class="logo" src="../logos/zero.jpeg" alt="Logo de la empresa Zero-Cafe" title="Logo Zero-Cafe">
+            </figure>    
+        </a>
+        <h1>Menu</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#" title="Menu">Menu</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="./servicios.html" title="servicios">¿Que ofrecemos?</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="./sobre-mi.html" title="nosotros">Sobre nosotros</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="./contacto.html" title="nuestras redes">Redes</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <!-----------------------------------SECCION DE CAFES------------->
+      <section class="coffee">
+        <h2 class="section-coffee">Cafes</h2>
+        <article>
+          <h3 class="latte">latte</h3>
+          <img class="coffee-img"src="../logos/latte.png" alt="foto del cafe" title="latte" >
+          <p class="cafes">El latte es un estilo de cafe menos fuerte en el cual se mezcla un 20% de cafe y un 80% de leche
+            de esta manera encontramos un punto medio para la gente que recien esta empezando  a tomar cafe,
+            este es tambien mas conocido como cafe con leche</p>
+        </article>
+        <article>
+          <h3>Capuccino</h3>
+          <img class="coffee-img" src="../logos/capuccino.png" alt="Foto capuccino" title="capuccino">
+          <p class="cafes">El capuccinop contiene el mismo porcentaje de leche y cafe que el latte lo que si cambia
+            es la espuma y el acompañamiento, el capuccino tiene una leche mas espumada acompañado con cacao y canela
+            lo cual cambia completamente su sabor
+          </p>
+        </article>
+        <article>
+          <h3>iced latte</h3>
+           <img class="coffee-img" src="../logos/iced.png" alt="Foto del iced latte" title="iced latte">
+            <p class="cafes">A diferencia del café helado tradicional (que suele ser café filtrado que se deja enfriar)
+          ,el iced latte mantiene la intensidad del expreso recién extraído mezclado directamente con la leche bien fría.</p>
+        </article>
+      </section>
+      <!------------------------------------SECCION DE COMIDA---------->
+      <section class="section-c">
+        <h2 class="comidas">comidas</h2>
+        <article>
+          <h3>Toston Palta</h3>
+          <img class="comida-img" src="../logos/toston.png" alt="Foto del toston Palta" title="toston Palta">
+          <p class="comida-p">Es una rodaja de pan tostado sobre la que se unta o distribuye Palta pisada.
+            Se sazona con sal, pimienta y un chorrito de aceite de oliva,y se acompañarlo con huevo revuelto
+          </p>
+        </article>
+        <article>
+          <h3>Medialunas de manteca</h3>
+          <img class="comida-img" src="../logos/medialunas.png" alt="Foto de las medialunas" title="Medialunas de manteca">
+          <p class="comida-p">Son la versión argentina del croissant francés, pero generalmente más pequeñas, 
+          húmedas y con un toque dulce o mantecoso.
+        </p>
+        </article>
+        <article>
+          <h3>Desayuno Americano</h3>
+          <img class="comida-img" src="../logos/americano.png" alt="foto del desayuno americano" title="Desayuno Americano">
+        <p class="comida-p">Es un desayuno súper completo y abundante de estilo salado/dulce. incluye:
+           huevos revueltos, panceta, tostadas, tomate cherry y palta pisada 
+        </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+    <p>Desarrollado por Juan Zandri</p>
+    <p>&copy;<span id="year"></span>Todos los Derechos Reservados</p>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/?flo=true" target="_blank" title="instagram" aria-label="instagram">
+                    <img class="RRSS-img" src="../logos/instagram.png" alt="logo de instagram" title="logo de instagram">
+                </a>
+            </li>
+              <li>
+                <a href="https://www.facebook.com/?locale=es_LA" target="_blank" title="facebook" area-label="facebook">
+                    <img class="RRSS-img" src="../logos/facebook.png" alt="logo de facebook" title="facebook">
+                </a>
+            </li>
+              <li>
+                <a href="https://web.whatsapp.com" target="_blank" title="whatsapp" area-label="whatsapp">
+                    <img class="RRSS-img" src="../logos/whatsapp.png" alt="Logo de whatsapp" title="whatsapp">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+</footer>
+
+<script>
+     document.getElementById("year").textcontent=new date().getFullYear();
+</script>
+</body>
+</html>

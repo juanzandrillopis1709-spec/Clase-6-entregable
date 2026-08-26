@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero-cafe</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+       <figure>
+        <img class="logo" src="logos/zero.jpeg" alt="Logo de la empresa Zero-cafe" title="Zero-cafe">
+       </figure>
+       <h1>Zero-Cafe</h1>
+       <nav>
+            <ul>
+                <li>
+                    <a class="nav-link" href="./pages/menu.html" title="Menu">Menu</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="./pages/servicios.html" title="servicios">¿Que ofrecemos?</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="./pages/sobre-mi.html" title="nosotros">Sobre nosotros</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="./pages/contacto.html" title="nuestras redes">Redes</a>
+                </li>
+            </ul>
+       </nav>
+    </header>
+<main class="inicio">
+    <section class="hero">
+        <article class="left">  
+                <figure>
+                    <img class="img-principal" src="./logos/transparente-inicio.png" alt="foto del logo de inicio" title="Logo inicio">    
+                </figure>
+                <h2 class="hero title">BUEN CAFE,<br>MEJORES DÍAS.</h2>
+                <P class="hero-p">Especialidad en cada detalle,pasión en cada taza</P>
+                <ul class="hero-list">
+                    <li>Granos Seleccionados</li>
+                    <li>Preparado con pasión</li>
+                    <li>Momentos que quedan</li>
+                </ul>
+                <nav class="hero-nav">
+                    <a href="./pages/menu.html">Conocé nuestro Menú</a>
+                </nav>
+        </article>
+        <article class="right">
+            <figure>
+                <img src="./logos/foto-inicio.png" alt="foto inicio" title="foto inicio" class="hero-img">
+            </figure>
+        </article>
+    </section>
+</main>
+<footer>
+    <p>Desarrollado por Juan Zandri</p>
+    <p>&copy;<span id="year"></span>Todos los Derechos Reservados</p>
+
+    <nav class="footer-nav">
+        <ul class="RS">
+            <li>
+                <a href="https://www.instagram.com/?flo=true" target="_blank" title="instagram" aria-label="instagram">
+                    <img class="RRSS-img" src="./logos/instagram.png" alt="logo de instagram" title="logo de instagram">
+                </a>
+            </li>
+              <li>
+                <a href="https://www.facebook.com/?locale=es_LA" target="_blank" title="facebook" area-label="facebook">
+                    <img class="RRSS-img" src="./logos/facebook.png" alt="logo de facebook" title="facebook">
+                </a>
+            </li>
+              <li>
+                <a href="https://web.whatsapp.com" target="_blank" title="whatsapp" area-label="whatsapp">
+                    <img class="RRSS-img-ws" src="./logos/whatsapp.png" alt="Logo de whatsapp" title="whatsapp">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+</footer>
+
+<script>
+     document.getElementById("year").textcontent=new date().getFullYear();
+</script>
+</body>
+</html>
