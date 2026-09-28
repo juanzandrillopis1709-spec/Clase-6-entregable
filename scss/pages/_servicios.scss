@@ -1,0 +1,47 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.section-servicios{
+padding: 20px;
+
+.tarjeta-servicio{
+      background-color: #14213D;
+  border: 2px solid #c8a364;
+  color: v.$general-color;
+  border-radius: 30px;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+&:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  border-color: v.$general-color;
+}
+h2{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #fcf8ee;
+}
+.servicios-img{
+    width: 90px;
+  height: auto;
+  margin-bottom: 16px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+p{
+      font-family: v.$font-text;
+  font-size: medium;
+  color: #fcf8ee;
+}
+@include m.desktop{
+  
+}
+}
+
+}

@@ -1,0 +1,38 @@
+@use "./variables" as v;
+@use "./mixins" as m;
+
+
+*{
+ margin:0;
+ padding:0; 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #0d1b2a;
+  font-family: v.$font-text;
+h1 {
+  color: v.$general-color;
+  font-size: 2rem;
+  }
+p {
+  color: v.$general-color;
+  font-size: 1.1rem;
+  }
+  @include m.desktop{
+    background-color: #fdf0d5 ;
+    h1 {
+    color: #0D1B2A;
+    font-size: 2.5rem;
+  }
+
+  p {
+    color: #14213D;
+    font-size: 1.25rem;
+  }
+  }
+}

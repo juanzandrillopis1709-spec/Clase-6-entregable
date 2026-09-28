@@ -1,0 +1,41 @@
+@use "../utilities/mixins" as m;
+
+footer {
+ @include m.flex(column, nowrap, center, center, 15px);
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 15px;
+  font-weight: 800;
+  padding: 20px;
+ ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+ }
+
+                .RRSS-img{
+                      height: 5vh;
+                      width: auto;
+                     transition: transform 0.3s ease;
+                }
+                .RRSS-img-ws{
+                     position: fixed;
+                     bottom: 20px;
+                     right: 20px;
+                     height: 5vh;
+                     width: auto;
+                     transition: transform 0.3s ease;
+                }
+            }
+        
+    
+
+
+
+
+
+
+
+

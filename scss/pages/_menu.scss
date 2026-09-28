@@ -1,0 +1,139 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.coffee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #0d1b2a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: v.$general-color;
+  .section-coffee {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: v.$general-color;
+  text-align: center;
+}
+ article {
+  background-color: #14213D;
+  border: 2px solid v.$general-color;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 25px;
+  max-width: 500px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);}
+  h2 h3{
+      font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color:  v.$general-color;
+  border-bottom: 2px solid #f0e6d8;
+  padding-bottom: 8px;
+  }
+}
+.coffee-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 15px;
+}
+ .cafes {
+   color: v.$general-color;
+  font-size: 1.1rem;
+  font-weight: 400;
+  }
+@include m.desktop{
+  background-color: v.$background-tarjetas;
+  .section-coffee{
+    color: #1a1a1a;
+  }
+  article{
+    background-color:  #FDF0D5;
+    border: 2px solid #1a1a1a;
+    h3{
+      color: #2c221e;
+    }
+  }
+.cafes{
+  color: #1B263B
+}
+}
+}
+.section-c{
+    padding: 40px 20px;
+  background-color: #0d1b2a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:v.$general-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .comida{
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: v.$general-color;
+  text-align: center;
+}
+ article{
+ background-color: #14213D;
+  border: 2px solid v.$general-color;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  max-width: 500px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+h2 h3{
+   font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color:  v.$general-color;
+  border-bottom: 2px solid #f0e6d8;
+  padding-bottom: 8px;
+
+
+}
+ 
+.comida-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 15px;
+}
+.comida-p{
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: v.$general-color;
+  margin: 0;
+}
+}
+@include m.desktop{
+  background-color: v.$background-tarjetas;
+  .comida{
+  color: #1a1a1a;
+  }
+    article{
+    background-color:  #FDF0D5;
+    border: 2px solid #1a1a1a;
+    h3{
+      color: #2c221e;
+    }
+  }
+.comida-p{
+  color: #1B263B
+}
+}
+}
