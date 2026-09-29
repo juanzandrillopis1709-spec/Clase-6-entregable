@@ -1,3 +1,4 @@
+@use "../utilities/variables" as v;
 @use "../utilities/mixins" as m;
 
 footer {
@@ -27,6 +28,20 @@ footer {
                      height: 5vh;
                      width: auto;
                      transition: transform 0.3s ease;
+                     @include m.desktop{
+                         bottom: 100px;
+                         right: 30px;
+                     }
+                    }
+                  @include m.desktop{
+          flex-direction: row;
+          justify-content: space-between;
+     }
+                footer p{
+                    color: v.$general-color;
+                    @include m.desktop{
+                         color: v.$text;
+                    }
                 }
             }
         

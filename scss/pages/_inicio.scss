@@ -30,6 +30,9 @@
                       max-width: 300px;
                       height: auto;
                       border-radius: 50px;
+                    @include m.tablet{
+                        width: 45vw;
+                    }
                 }
             }
             .hero-title{
@@ -122,7 +125,10 @@
     figure{
         .hero-img{
                 width: 45vw;
+        @include m.tablet{
+            width: 60vw;
         }
+            }
     }
   }
 }

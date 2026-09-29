@@ -25,6 +25,9 @@ h2, h3{
   font-family: v.$font-text;
   font-size: medium;
   color: v.$general-color;
+  @include m.desktop{
+    color: v.$text;
+  }
 }
 @include m.desktop{
     flex-direction: row;
@@ -39,5 +42,11 @@ h2, h3{
     color: #0D1B2A;
     font-size: 1.5rem;
 }
+}
+@include m.desktop{
+    flex-direction: row;
+    background-color: v.$background-tarjetas;
+    border: 2px solid black;
+    max-width: 80%;
 }
 }

@@ -1,6 +1,20 @@
 @use "../utilities/variables" as v;
 @use "../utilities/mixins" as m;
 
+.tarjeta-base{
+background-color: #14213D;
+border: 2px solid v.$general-color;
+border-radius: 12px;
+margin-bottom: 25px;
+max-width: 500px;
+width: 100%;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+&:hover {
+  transform: translateY(-8px);
+  box-shadow:0 10px 20px rgba(0, 0, 0, 0.3);
+}
+}
+
 .coffee {
   display: flex;
   flex-direction: column;
@@ -16,18 +30,10 @@
   text-align: center;
 }
  article {
-  background-color: #14213D;
-  border: 2px solid v.$general-color;
-  border-radius: 12px;
+  @extend .tarjeta-base;
   padding: 24px;
-  margin-bottom: 25px;
-  max-width: 500px;
-  width: 100%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  &:hover{
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);}
-  h2 h3{
+  
+  h3{
       font-size: 1.3rem;
   margin-top: 0;
   margin-bottom: 15px;
@@ -62,7 +68,7 @@
     }
   }
 .cafes{
-  color: #1B263B
+  color: #1B263B;
 }
 }
 }
@@ -81,20 +87,10 @@
   text-align: center;
 }
  article{
- background-color: #14213D;
-  border: 2px solid v.$general-color;
-  border-radius: 12px;
+ @extend .tarjeta-base;
   padding: 25px;
-  margin-bottom: 25px;
-  max-width: 500px;
-  width: 100%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  &:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-h2 h3{
+ 
+  h3{
    font-size: 1.3rem;
   margin-top: 0;
   margin-bottom: 15px;
@@ -104,6 +100,8 @@ h2 h3{
 
 
 }
+}
+
  
 .comida-img {
   width: 100%;
@@ -118,7 +116,6 @@ h2 h3{
   line-height: 1.6;
   color: v.$general-color;
   margin: 0;
-}
 }
 @include m.desktop{
   background-color: v.$background-tarjetas;
@@ -136,4 +133,5 @@ h2 h3{
   color: #1B263B
 }
 }
+
 }

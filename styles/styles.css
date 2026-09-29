@@ -46,6 +46,12 @@ header .logo {
   width: auto;
   height: 8vh;
 }
+@media (min-width: 1024px) {
+  header .logo {
+    width: 15vh;
+    height: 10vh;
+  }
+}
 header .nav-link {
   text-decoration: none;
   color: #ffffff;
@@ -60,6 +66,11 @@ header header nav ul {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+}
+@media (min-width: 1024px) {
+  header header nav ul {
+    justify-content: flex-start;
+  }
 }
 header header nav ul li {
   list-style: none;
@@ -100,6 +111,13 @@ header .navbar-toggler {
 header .navbar-toggler-icon {
   filter: invert(1);
 }
+@media (min-width: 1024px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+}
 
 footer {
   display: flex;
@@ -128,6 +146,26 @@ footer .RRSS-img-ws {
   height: 5vh;
   width: auto;
   transition: transform 0.3s ease;
+}
+@media (min-width: 1024px) {
+  footer .RRSS-img-ws {
+    bottom: 100px;
+    right: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+footer footer p {
+  color: #ffffff;
+}
+@media (min-width: 1024px) {
+  footer footer p {
+    color: #14213D;
+  }
 }
 
 .inicio {
@@ -159,6 +197,11 @@ footer .RRSS-img-ws {
   max-width: 300px;
   height: auto;
   border-radius: 50px;
+}
+@media (min-width: 768px) {
+  .inicio .hero .left figure .img-principal {
+    width: 45vw;
+  }
 }
 .inicio .hero .left .hero-title {
   color: #ffffff;
@@ -239,6 +282,25 @@ footer .RRSS-img-ws {
     width: 45vw;
   }
 }
+@media (min-width: 1024px) and (min-width: 768px) {
+  .inicio .hero .right figure .hero-img {
+    width: 60vw;
+  }
+}
+
+.tarjeta-base, .section-c article, .coffee article {
+  background-color: #14213D;
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  max-width: 500px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tarjeta-base:hover, .section-c article:hover, .coffee article:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
 
 .coffee {
   display: flex;
@@ -256,20 +318,9 @@ footer .RRSS-img-ws {
   text-align: center;
 }
 .coffee article {
-  background-color: #14213D;
-  border: 2px solid #ffffff;
-  border-radius: 12px;
   padding: 24px;
-  margin-bottom: 25px;
-  max-width: 500px;
-  width: 100%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.coffee article:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-.coffee article h2 h3 {
+.coffee article h3 {
   font-size: 1.3rem;
   margin-top: 0;
   margin-bottom: 15px;
@@ -325,20 +376,9 @@ footer .RRSS-img-ws {
   text-align: center;
 }
 .section-c article {
-  background-color: #14213D;
-  border: 2px solid #ffffff;
-  border-radius: 12px;
   padding: 25px;
-  margin-bottom: 25px;
-  max-width: 500px;
-  width: 100%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.section-c article:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-.section-c article h2 h3 {
+.section-c article h3 {
   font-size: 1.3rem;
   margin-top: 0;
   margin-bottom: 15px;
@@ -346,7 +386,7 @@ footer .RRSS-img-ws {
   border-bottom: 2px solid #f0e6d8;
   padding-bottom: 8px;
 }
-.section-c article .comida-img {
+.section-c .comida-img {
   width: 100%;
   height: 280px;
   object-fit: cover;
@@ -354,7 +394,7 @@ footer .RRSS-img-ws {
   display: block;
   margin-bottom: 15px;
 }
-.section-c article .comida-p {
+.section-c .comida-p {
   font-size: 0.95rem;
   line-height: 1.6;
   color: #ffffff;
@@ -418,6 +458,12 @@ footer .RRSS-img-ws {
   font-size: medium;
   color: #fcf8ee;
 }
+@media (min-width: 1024px) {
+  .section-servicios .tarjeta-servicio {
+    margin: 0;
+  }
+}
+
 .tarjeta-historia {
   display: flex;
   flex-direction: column;
@@ -445,6 +491,12 @@ footer .RRSS-img-ws {
   color: #ffffff;
 }
 @media (min-width: 1024px) {
+  .tarjeta-historia .texto-tarjeta p,
+  .tarjeta-historia .texto-tarjeta-2 p {
+    color: #14213D;
+  }
+}
+@media (min-width: 1024px) {
   .tarjeta-historia {
     flex-direction: row;
     background-color: #FDF0D5;
@@ -458,6 +510,14 @@ footer .RRSS-img-ws {
   .tarjeta-historia h2, .tarjeta-historia h3 {
     color: #0D1B2A;
     font-size: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .tarjeta-historia {
+    flex-direction: row;
+    background-color: #fdf0d5;
+    border: 2px solid black;
+    max-width: 80%;
   }
 }
 
@@ -511,6 +571,11 @@ footer .RRSS-img-ws {
   }
   .seccion-redes h2 {
     color: #1a1a1a;
+  }
+}
+@media (min-width: 1024px) {
+  .seccion-redes {
+    border-radius: 100px;
   }
 }
 

@@ -10,6 +10,10 @@ header {
 .logo {
   width: auto;
   height: 8vh;
+  @include m.desktop{
+    width: 15vh;
+    height: 10vh;
+  }
 }
   .nav-link {
   text-decoration: none;
@@ -25,6 +29,9 @@ header nav ul {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  @include m.desktop{
+    justify-content: flex-start;
+  }
 }
 
 header nav ul li {
@@ -68,5 +75,10 @@ header nav ul li {
 }
 .navbar-toggler-icon{
   filter: invert(1);
+}
+@include m.desktop{
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 }

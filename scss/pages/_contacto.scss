@@ -49,4 +49,7 @@ h2{
 color: #1a1a1a;
 } 
 }
+@include m.desktop{
+  border-radius: 100px;
+}
 }
