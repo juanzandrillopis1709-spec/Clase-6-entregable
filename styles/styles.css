@@ -549,10 +549,12 @@ footer footer p {
   .seccion-redes .contenedor-redes h3 {
     color: #1a1a1a;
   }
-  .seccion-redes .contenedor-redes {
+}
+@media (min-width: 1024px) {
+  .seccion-redes {
     border-radius: 100px;
   }
-  .seccion-redes .contenedor-redes h2 {
+  .seccion-redes h2 {
     color: #1a1a1a;
   }
 }

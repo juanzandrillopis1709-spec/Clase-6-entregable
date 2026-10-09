@@ -34,19 +34,22 @@ h3{
 
   }
 }
-@include m.desktop{
+  @include m.desktop{
    flex-direction: row;
     padding: 50px;
     gap: 100px;
     h3{
       color: v.$black;
     }
-      border-radius: 100px;
-h2{
-color: v.$black;
+  }
 }
 
-
-} 
+@include m.desktop{
+    border-radius: 100px;
+  h2{ 
+    color: v.$black;
   }
+
+
+}
 }
