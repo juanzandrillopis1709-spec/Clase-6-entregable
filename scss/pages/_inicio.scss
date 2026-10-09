@@ -67,7 +67,7 @@
             color: #0d1b2a;
          }
           &:focus{
-             outline: 2px solid #c8a364;
+             outline: 2px solid v.$color-borde;
              outline-offset: 2px;
           }
           &:active{
@@ -84,6 +84,9 @@
                 width: 80vw;
                 height: auto;
                 border-radius: 30px;
+                  @include m.tablet{
+            width: 60vw;
+        }
             }
         }
     }
@@ -125,9 +128,7 @@
     figure{
         .hero-img{
                 width: 45vw;
-        @include m.tablet{
-            width: 60vw;
-        }
+      
             }
     }
   }

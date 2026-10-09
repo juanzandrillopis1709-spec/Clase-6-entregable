@@ -5,8 +5,8 @@
 padding: 20px;
 
 .tarjeta-servicio{
-      background-color: #14213D;
-  border: 2px solid #c8a364;
+      background-color: v.$text;
+  border: 2px solid v.$color-borde;
   color: v.$general-color;
   border-radius: 30px;
   align-items: center;
@@ -22,10 +22,10 @@ padding: 20px;
   border-color: v.$general-color;
 }
 h2{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: v.$font-text;
   margin-top: 0;
   margin-bottom: 16px;
-  color: #fcf8ee;
+  color: v.$text-tarjeta;
 }
 .servicios-img{
     width: 90px;
@@ -37,7 +37,7 @@ h2{
 p{
       font-family: v.$font-text;
   font-size: medium;
-  color: #fcf8ee;
+  color: v.$text-tarjeta;
 }
 @include m.desktop{
   margin: 0;

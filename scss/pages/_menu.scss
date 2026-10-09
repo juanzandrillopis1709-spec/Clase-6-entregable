@@ -2,7 +2,7 @@
 @use "../utilities/mixins" as m;
 
 .tarjeta-base{
-background-color: #14213D;
+background-color: v.$text;
 border: 2px solid v.$general-color;
 border-radius: 12px;
 margin-bottom: 25px;
@@ -15,13 +15,22 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 }
 
+.img-base{
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 15px;
+}
+
 .coffee {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
-  background-color: #0d1b2a;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: v.$background-oscuro;
+  font-family: v.$font-text;
   color: v.$general-color;
   .section-coffee {
   font-size: 1.8rem;
@@ -38,17 +47,12 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-top: 0;
   margin-bottom: 15px;
   color:  v.$general-color;
-  border-bottom: 2px solid #f0e6d8;
+  border-bottom: 2px solid v.$titulo-tarjeta;
   padding-bottom: 8px;
   }
 }
 .coffee-img {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
-  margin-bottom: 15px;
+@extend .img-base;
 }
  .cafes {
    color: v.$general-color;
@@ -58,24 +62,24 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 @include m.desktop{
   background-color: v.$background-tarjetas;
   .section-coffee{
-    color: #1a1a1a;
+    color: v.$black;
   }
   article{
-    background-color:  #FDF0D5;
-    border: 2px solid #1a1a1a;
+    background-color:  v.$background-tarjetas;
+    border: 2px solid v.$black;
     h3{
-      color: #2c221e;
+      color: v.$titulo-tarjeta-compu;
     }
   }
 .cafes{
-  color: #1B263B;
+  color: v.$text-secundario;
 }
 }
 }
 .section-c{
     padding: 40px 20px;
-  background-color: #0d1b2a;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: v.$background-oscuro;
+  font-family: v.$font-text;
   color:v.$general-color;
   display: flex;
   flex-direction: column;
@@ -95,7 +99,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-top: 0;
   margin-bottom: 15px;
   color:  v.$general-color;
-  border-bottom: 2px solid #f0e6d8;
+  border-bottom: 2px solid v.$titulo-tarjeta;
   padding-bottom: 8px;
 
 
@@ -104,12 +108,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 
  
 .comida-img {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
-  margin-bottom: 15px;
+@extend .img-base;
 }
 .comida-p{
   font-size: 0.95rem;
@@ -120,17 +119,17 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 @include m.desktop{
   background-color: v.$background-tarjetas;
   .comida{
-  color: #1a1a1a;
+  color: v.$black;
   }
     article{
-    background-color:  #FDF0D5;
-    border: 2px solid #1a1a1a;
+    background-color:  v.$background-tarjetas;
+    border: 2px solid v.$black;
     h3{
-      color: #2c221e;
+      color: v.$titulo-tarjeta-compu;
     }
   }
 .comida-p{
-  color: #1B263B
+  color: v.$text-secundario;
 }
 }
 

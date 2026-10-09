@@ -1,10 +1,11 @@
 @use "../utilities/variables" as v;
 @use "../utilities/mixins" as m;
 header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
+  @include m.flex(column, nowrap, center, center, 15px);
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // gap: 15px;
   padding: 15px;
 
 .logo {
@@ -24,7 +25,7 @@ header {
   border-radius: 15px;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.15s ease;
 }
-header nav ul {
+ nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -34,42 +35,31 @@ header nav ul {
   }
 }
 
-header nav ul li {
+ nav ul li {
   list-style: none;
   margin: 5px;
 }
 
 .nav-link:hover {
   background-color: v.$general-color;
-  color: #0d1b2a;
+  color: v.$headings;
 }
 
 .nav-link:focus {
-  outline: 2px solid #c8a364;
+  outline: 2px solid v.$color-borde;
   outline-offset: 2px;
 }
 .nav-brand  {
   color: v.$general-color;
-  @include m.desktop{
-    color: v.$general-color;
-  }
+  
 }
 
 .nav-link:active {
   transform: scale(0.95);
 }
-@include m.desktop{
- .nav-link{
 
-  color: black;
-  border: 2px solid black;
-  &:hover{
-    background-color: black;
-    color: v.$general-color;
-  }
 
-}
-}
+
 .navbar-toggler{
   border-color: v.$general-color;
 }
@@ -80,5 +70,15 @@ header nav ul li {
   flex-direction: row;
   justify-content: space-between;
   padding: 0 20px;
+ .nav-link{
+  color: v.$black;
+  border: 2px solid v.$black;
+  &:hover{
+    background-color:v.$black;
+    color: v.$general-color;
+  }
+
+  
+}
 }
 }

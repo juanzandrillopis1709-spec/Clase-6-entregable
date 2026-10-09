@@ -8,12 +8,12 @@
   border-radius: 30px;
   h2{
     margin-top: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: v.$font-text;
   margin-bottom: 25px;
   color: v.$general-color;
   }
   .contenedor-redes{
-@include m.flex(column, normal, center, center, 30px);
+@include m.flex(column, nowrap, center, center, 30px);
     //     display: flex;
 //   flex-direction: column;
   padding: 20px;
@@ -39,17 +39,14 @@ h3{
     padding: 50px;
     gap: 100px;
     h3{
-      color: #1a1a1a;
+      color: v.$black;
     }
-}
-}
- @include m.desktop{
-  border-radius: 100px;
+      border-radius: 100px;
 h2{
-color: #1a1a1a;
+color: v.$black;
+}
+
+
 } 
-}
-@include m.desktop{
-  border-radius: 100px;
-}
+  }
 }
