@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +12,7 @@ img {
 
 body {
   background-color: #0d1b2a;
-  font-family: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
+  font-family: "Nunito Sans", "Segoe UI", Tahoma, sans-serif;
 }
 body h1 {
   color: #ffffff;
@@ -38,6 +39,8 @@ body p {
 header {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
   gap: 15px;
   padding: 15px;
@@ -61,24 +64,24 @@ header .nav-link {
   border-radius: 15px;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.15s ease;
 }
-header header nav ul {
+header nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
 }
 @media (min-width: 1024px) {
-  header header nav ul {
+  header nav ul {
     justify-content: flex-start;
   }
 }
-header header nav ul li {
+header nav ul li {
   list-style: none;
   margin: 5px;
 }
 header .nav-link:hover {
   background-color: #ffffff;
-  color: #0d1b2a;
+  color: #0D1B2A;
 }
 header .nav-link:focus {
   outline: 2px solid #c8a364;
@@ -87,23 +90,8 @@ header .nav-link:focus {
 header .nav-brand {
   color: #ffffff;
 }
-@media (min-width: 1024px) {
-  header .nav-brand {
-    color: #ffffff;
-  }
-}
 header .nav-link:active {
   transform: scale(0.95);
-}
-@media (min-width: 1024px) {
-  header .nav-link {
-    color: black;
-    border: 2px solid black;
-  }
-  header .nav-link:hover {
-    background-color: black;
-    color: #ffffff;
-  }
 }
 header .navbar-toggler {
   border-color: #ffffff;
@@ -116,6 +104,14 @@ header .navbar-toggler-icon {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 20px;
+  }
+  header .nav-link {
+    color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+  }
+  header .nav-link:hover {
+    background-color: #1a1a1a;
+    color: #ffffff;
   }
 }
 
@@ -249,6 +245,11 @@ footer footer p {
   height: auto;
   border-radius: 30px;
 }
+@media (min-width: 768px) {
+  .inicio .hero .right figure .hero-img {
+    width: 60vw;
+  }
+}
 @media (min-width: 1024px) {
   .inicio {
     padding: 50px;
@@ -282,10 +283,9 @@ footer footer p {
     width: 45vw;
   }
 }
-@media (min-width: 1024px) and (min-width: 768px) {
-  .inicio .hero .right figure .hero-img {
-    width: 60vw;
-  }
+.inicio .carousel-item img {
+  height: 400px;
+  object-fit: cover;
 }
 
 .tarjeta-base, .section-c article, .coffee article {
@@ -300,6 +300,15 @@ footer footer p {
 .tarjeta-base:hover, .section-c article:hover, .coffee article:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.img-base, .section-c .comida-img, .coffee .coffee-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 15px;
 }
 
 .coffee {
@@ -328,14 +337,6 @@ footer footer p {
   border-bottom: 2px solid #f0e6d8;
   padding-bottom: 8px;
 }
-.coffee .coffee-img {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
-  margin-bottom: 15px;
-}
 .coffee .cafes {
   color: #ffffff;
   font-size: 1.1rem;
@@ -349,14 +350,14 @@ footer footer p {
     color: #1a1a1a;
   }
   .coffee article {
-    background-color: #FDF0D5;
+    background-color: #fdf0d5;
     border: 2px solid #1a1a1a;
   }
   .coffee article h3 {
     color: #2c221e;
   }
   .coffee .cafes {
-    color: #1B263B;
+    color: #1b263B;
   }
 }
 
@@ -386,14 +387,6 @@ footer footer p {
   border-bottom: 2px solid #f0e6d8;
   padding-bottom: 8px;
 }
-.section-c .comida-img {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
-  margin-bottom: 15px;
-}
 .section-c .comida-p {
   font-size: 0.95rem;
   line-height: 1.6;
@@ -408,14 +401,14 @@ footer footer p {
     color: #1a1a1a;
   }
   .section-c article {
-    background-color: #FDF0D5;
+    background-color: #fdf0d5;
     border: 2px solid #1a1a1a;
   }
   .section-c article h3 {
     color: #2c221e;
   }
   .section-c .comida-p {
-    color: #1B263B;
+    color: #1b263B;
   }
 }
 
@@ -454,7 +447,7 @@ footer footer p {
   object-fit: cover;
 }
 .section-servicios .tarjeta-servicio p {
-  font-family: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: medium;
   color: #fcf8ee;
 }
@@ -486,7 +479,7 @@ footer footer p {
 .tarjeta-historia .texto-tarjeta p,
 .tarjeta-historia .texto-tarjeta-2 p {
   padding: 10px;
-  font-family: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: medium;
   color: #ffffff;
 }
@@ -499,7 +492,7 @@ footer footer p {
 @media (min-width: 1024px) {
   .tarjeta-historia {
     flex-direction: row;
-    background-color: #FDF0D5;
+    background-color: #fdf0d5;
     border: 2px solid black;
     max-width: 80%;
   }
@@ -508,16 +501,8 @@ footer footer p {
     color: #14213D;
   }
   .tarjeta-historia h2, .tarjeta-historia h3 {
-    color: #0D1B2A;
+    color: #0d1b2a;
     font-size: 1.5rem;
-  }
-}
-@media (min-width: 1024px) {
-  .tarjeta-historia {
-    flex-direction: row;
-    background-color: #fdf0d5;
-    border: 2px solid black;
-    max-width: 80%;
   }
 }
 
@@ -536,7 +521,7 @@ footer footer p {
 .seccion-redes .contenedor-redes {
   display: flex;
   flex-direction: column;
-  flex-wrap: normal;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -564,18 +549,11 @@ footer footer p {
   .seccion-redes .contenedor-redes h3 {
     color: #1a1a1a;
   }
-}
-@media (min-width: 1024px) {
-  .seccion-redes {
+  .seccion-redes .contenedor-redes {
     border-radius: 100px;
   }
-  .seccion-redes h2 {
+  .seccion-redes .contenedor-redes h2 {
     color: #1a1a1a;
-  }
-}
-@media (min-width: 1024px) {
-  .seccion-redes {
-    border-radius: 100px;
   }
 }
 
