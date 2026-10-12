@@ -19,6 +19,10 @@ h1 {
   color: v.$general-color;
   font-size: 2rem;
   }
+  h2, h3{
+    color: v.$general-color;
+    font-size: 1.3rem;
+  }
 p {
   color: v.$general-color;
   font-size: 1.1rem;
@@ -29,7 +33,10 @@ p {
     color: v.$headings;
     font-size: 2.5rem;
   }
-
+ h2, h3{
+  color: v.$headings;
+font-size: 1.5rem;
+ }
   p {
     color: v.$text;
     font-size: 1.25rem;

@@ -18,6 +18,10 @@ body h1 {
   color: #ffffff;
   font-size: 2rem;
 }
+body h2, body h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+}
 body p {
   color: #ffffff;
   font-size: 1.1rem;
@@ -29,6 +33,10 @@ body p {
   body h1 {
     color: #0D1B2A;
     font-size: 2.5rem;
+  }
+  body h2, body h3 {
+    color: #0D1B2A;
+    font-size: 1.5rem;
   }
   body p {
     color: #14213D;
@@ -213,9 +221,13 @@ footer footer p {
   align-items: normal;
   gap: 10px;
   list-style: none;
+  color: #ffffff;
 }
 .inicio .hero .left .hero-list li {
   padding: 5px;
+}
+.inicio .hero .left .hero-nav {
+  margin-bottom: 20px;
 }
 .inicio .hero .left .hero-nav a {
   text-decoration: none;
@@ -273,10 +285,10 @@ footer footer p {
   }
   .inicio .hero .left .hero-nav a {
     color: #14213D;
-    border: 2px solid black;
+    border: 2px solid #1a1a1a;
   }
   .inicio .hero .left .hero-nav a:hover {
-    background-color: black;
+    background-color: #1a1a1a;
     color: #ffffff;
   }
   .inicio .hero .right figure .hero-img {

@@ -48,12 +48,13 @@
             //  flex-wrap: wrap;
             //  justify-content: center;
             // gap: 10px;
+            color: v.$general-color;
             li{
                 padding: 5px;
             }
         }
         .hero-nav{
-
+        margin-bottom: 20px;
             a{
                 text-decoration: none;
   color: v.$general-color;
@@ -64,7 +65,7 @@
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.15s ease;
          &:hover {
             background-color: v.$general-color;
-            color: #0d1b2a;
+            color: v.$background-oscuro;
          }
           &:focus{
              outline: 2px solid v.$color-borde;
@@ -114,9 +115,9 @@
   .hero-nav{
     a{
         color: v.$text;
-        border: 2px solid black;
+        border: 2px solid v.$black;
         &:hover {
-     background-color: black;
+     background-color: v.$black;
      color: v.$general-color;
   }
     }
