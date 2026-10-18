@@ -267,7 +267,7 @@ footer p {
   object-fit: cover;
 }
 
-.tarjeta-base, .seccion-formulario .tarjeta-info, .tarjeta-historia, .coffee article, .section-c article {
+.tarjeta-base, .tarjeta-info, .tarjeta-historia, .coffee article, .section-c article {
   background-color: #fdf0d5;
   border: 2px solid #1a1a1a;
   border-radius: 12px;
@@ -276,7 +276,7 @@ footer p {
   width: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.tarjeta-base:hover, .seccion-formulario .tarjeta-info:hover, .tarjeta-historia:hover, .coffee article:hover, .section-c article:hover {
+.tarjeta-base:hover, .tarjeta-info:hover, .tarjeta-historia:hover, .coffee article:hover, .section-c article:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
@@ -505,11 +505,12 @@ footer p {
   border-radius: 8px;
   cursor: pointer;
 }
-.seccion-formulario .tarjeta-info {
+
+.tarjeta-info {
   text-align: center;
   padding: 16px;
-  margin: 20px auto;
-  max-width: 600px;
+  height: 100%;
+  padding-bottom: 60px;
 }
 
 /*# sourceMappingURL=styles.css.map */
