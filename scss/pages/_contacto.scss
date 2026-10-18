@@ -1,55 +1,88 @@
 @use "../utilities/variables" as v;
 @use "../utilities/mixins" as m;
+@use "../components/tarjeta";
 
-.seccion-redes{
- text-align: center;
+.seccion-redes {
+  text-align: center;
   padding: 20px;
-  border: 2px solid v.$general-color;
+  border: 2px solid v.$black;
   border-radius: 30px;
-  h2{
+
+  h2 {
     margin-top: 0;
     font-family: v.$font-text;
-  margin-bottom: 25px;
-  color: v.$general-color;
-  }
-  .contenedor-redes{
-@include m.flex(column, nowrap, center, center, 30px);
-    //     display: flex;
-//   flex-direction: column;
-  padding: 20px;
-//   gap: 30px;
-//   justify-content: center;
-//   align-items: center;
-h3{
-    font-size: 0.95rem;
-    margin-bottom: 10px;
-    color: v.$general-color;
-}
-.RRSS-img-2{
-    width: 60px;
-  height: 60px;
-  transition: transform 0.3s ease;
-  &:hover{
-      transform: scale(1.15);
-
-  }
-}
-  @include m.desktop{
-   flex-direction: row;
-    padding: 50px;
-    gap: 100px;
-    h3{
-      color: v.$black;
-    }
-  }
-}
-
-@include m.desktop{
-    border-radius: 100px;
-  h2{ 
+    margin-bottom: 25px;
     color: v.$black;
   }
 
+  .contenedor-redes {
+    @include m.flex(column, nowrap, center, center, 30px);
 
+    padding: 20px;
+
+    h3 {
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+      color: v.$black;
+    }
+
+    .RRSS-img-2 {
+      width: 60px;
+      height: 60px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.15);
+
+      }
+
+    }
+
+    @include m.desktop {
+      flex-direction: row;
+      padding: 50px;
+      gap: 100px;
+
+    }
+  }
+
+
+  @include m.desktop {
+    border-radius: 100px;
+
+  }
 }
+
+.seccion-formulario {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+
+  .formulario-contacto {
+    @include m.flex(column, nowrap, flex-start, stretch, 10px);
+  }
+
+  .campo-formulario {
+    padding: 10px;
+    border: 2px solid v.$black;
+    border-radius: 8px;
+    font-family: v.$font-text;
+  }
+
+  .boton-enviar {
+    padding: 10px;
+    background-color: v.$black;
+    color: v.$general-color;
+    border: 2px solid v.$black;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .tarjeta-info {
+    @extend .tarjeta-base;
+    text-align: center;
+    padding: 16px;
+    margin: 20px auto;
+    max-width: 600px;
+  }
 }

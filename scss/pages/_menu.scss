@@ -1,21 +1,8 @@
 @use "../utilities/variables" as v;
 @use "../utilities/mixins" as m;
+@use "../components/tarjeta" as t;
 
-.tarjeta-base{
-background-color: v.$text;
-border: 2px solid v.$general-color;
-border-radius: 12px;
-margin-bottom: 25px;
-max-width: 500px;
-width: 100%;
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-&:hover {
-  transform: translateY(-8px);
-  box-shadow:0 10px 20px rgba(0, 0, 0, 0.3);
-}
-}
-
-.img-base{
+.img-base {
   width: 100%;
   height: 280px;
   object-fit: cover;
@@ -29,108 +16,85 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
-  background-color: v.$background-oscuro;
-  font-family: v.$font-text;
-  color: v.$general-color;
-  .section-coffee {
-  font-size: 1.8rem;
-  margin-bottom: 30px;
-  color: v.$general-color;
-  text-align: center;
-}
- article {
-  @extend .tarjeta-base;
-  padding: 24px;
-  
-  h3{
-      font-size: 1.3rem;
-  margin-top: 0;
-  margin-bottom: 15px;
-  color:  v.$general-color;
-  border-bottom: 2px solid v.$titulo-tarjeta;
-  padding-bottom: 8px;
-  }
-}
-.coffee-img {
-@extend .img-base;
-}
- .cafes {
-   color: v.$general-color;
-  font-size: 1.1rem;
-  font-weight: 400;
-  }
-@include m.desktop{
   background-color: v.$background-tarjetas;
-  .section-coffee{
+  font-family: v.$font-text;
+  color: v.$black;
+
+  .section-coffee {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
     color: v.$black;
+    text-align: center;
   }
-  article{
-    background-color:  v.$background-tarjetas;
-    border: 2px solid v.$black;
-    h3{
+
+  article {
+    @extend .tarjeta-base;
+    padding: 24px;
+
+    h3 {
+      font-size: 1.3rem;
+      margin-top: 0;
+      margin-bottom: 15px;
       color: v.$titulo-tarjeta-compu;
+      border-bottom: 2px solid v.$titulo-tarjeta-compu;
+      padding-bottom: 8px;
     }
   }
-.cafes{
-  color: v.$text-secundario;
+
+  .coffee-img {
+    @extend .img-base;
+  }
+
+  .cafes {
+    color: v.$text-secundario;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
 }
-}
-}
-.section-c{
-    padding: 40px 20px;
-  background-color: v.$background-oscuro;
+
+.section-c {
+  padding: 40px 20px;
+  background-color: v.$background-tarjetas;
   font-family: v.$font-text;
-  color:v.$general-color;
+  color: v.$black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  .comida{
-  font-size: 1.8rem;
-  margin-bottom: 30px;
-  color: v.$general-color;
-  text-align: center;
-}
- article{
- @extend .tarjeta-base;
-  padding: 25px;
- 
-  h3{
-   font-size: 1.3rem;
-  margin-top: 0;
-  margin-bottom: 15px;
-  color:  v.$general-color;
-  border-bottom: 2px solid v.$titulo-tarjeta;
-  padding-bottom: 8px;
 
-
-}
-}
-
- 
-.comida-img {
-@extend .img-base;
-}
-.comida-p{
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: v.$general-color;
-  margin: 0;
-}
-@include m.desktop{
-  background-color: v.$background-tarjetas;
-  .comida{
-  color: v.$black;
+  .comida {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: v.$black;
+    text-align: center;
   }
-    article{
-    background-color:  v.$background-tarjetas;
-    border: 2px solid v.$black;
-    h3{
+
+  article {
+    @extend .tarjeta-base;
+    padding: 25px;
+
+    h3 {
+      font-size: 1.3rem;
+      margin-top: 0;
+      margin-bottom: 15px;
       color: v.$titulo-tarjeta-compu;
+      border-bottom: 2px solid v.$titulo-tarjeta-compu;
+      padding-bottom: 8px;
+
+
     }
   }
-.comida-p{
-  color: v.$text-secundario;
-}
-}
+
+
+  .comida-img {
+    @extend .img-base;
+  }
+
+  .comida-p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: v.$text-secundario;
+    margin: 0;
+  }
+
 
 }

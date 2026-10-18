@@ -2,9 +2,9 @@
 @use "./mixins" as m;
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto&display=swap');
 
-*{
- margin:0;
- padding:0; 
+* {
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -13,33 +13,37 @@ img {
 }
 
 body {
-  background-color: v.$background-oscuro;
-  font-family: 'Nunito Sans', 'Segoe UI', Tahoma, sans-serif;
-h1 {
-  color: v.$general-color;
-  font-size: 2rem;
+  background-color: v.$background-tarjetas;
+  font-family: v.$font-text;
+
+  h1 {
+    color: v.$headings;
+    font-size: 2rem;
   }
-  h2, h3{
-    color: v.$general-color;
+
+  h2,
+  h3 {
+    color: v.$headings;
     font-size: 1.3rem;
   }
-p {
-  color: v.$general-color;
-  font-size: 1.1rem;
-  }
-  @include m.desktop{
-    background-color: v.$background-tarjetas ;
-    h1 {
-    color: v.$headings;
-    font-size: 2.5rem;
-  }
- h2, h3{
-  color: v.$headings;
-font-size: 1.5rem;
- }
+
   p {
     color: v.$text;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
+
+  @include m.desktop {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2,
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
   }
 }
