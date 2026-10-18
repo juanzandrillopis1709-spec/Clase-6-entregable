@@ -512,5 +512,15 @@ footer p {
   height: 100%;
   padding-bottom: 60px;
 }
+@media (min-width: 1024px) {
+  .tarjeta-info {
+    height: 100%;
+  }
+}
+
+.seccion-preguntas {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
 
 /*# sourceMappingURL=styles.css.map */
